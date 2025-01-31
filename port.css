@@ -265,9 +265,13 @@ body{
     justify-content: center;
     gap: 10px;
 
+    
 }
 
-
+.dropdown_menu.open{
+    height: 300px;
+    display: block;
+}
 
 
 
@@ -428,7 +432,7 @@ body{
 
     #nav_menu{
         
-        bottom: 610px;
+        bottom: 620px;
     }
 
     #intro{
@@ -495,7 +499,7 @@ body{
         border: 2px solid black;
         background-color: #FFFFFF;
         border-radius: 10px;
-        padding:10px 15px;
+        padding:5px 10px;
         box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4);
         transition: 0.3s;
         
@@ -542,9 +546,10 @@ body{
     }
 
     #skill{
-        display:inline-flex;
+        display:flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
         
         height: 80px;
         width: 160px;
@@ -557,7 +562,7 @@ body{
         margin-top: 20px;
         margin-bottom: 0px;
         background-color: #FFFFFF;
-        margin-left: 80px;
+        margin-left: 40px;
         border-width: 45%;
         
         font-size: 0.75rem;
@@ -586,6 +591,4 @@ body{
         
     }
 }
-
-
 
