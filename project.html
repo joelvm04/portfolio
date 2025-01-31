@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="port.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="port.js"></script>
+    </head>
+    <body >
+        <header class="1-header">
+            <nav class="bd-grid">
+                <div class="nav_menu" id="nav_menu">
+                    <div class="toggle_btn">
+                        <i id="nav_logo" class="fa-solid fa-bars"></i>
+                    </div>
+                    <label id="logo">Joel Viyon Mascarenhas</label>
+                    <ul class="nav_list">
+                        <li ><a href="javascript:void(0);" onclick="navigateToPage('index.html')" ><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li ><a href="javascript:void(0);" onclick="navigateToPage('about.html')" ><i class="fa-solid fa-person"></i> About</a></li>
+                        <li ><a href="javascript:void(0);" onclick="navigateToPage('skills.html')" ><i class="fa-solid fa-code"></i> Skills</a></li>
+                        <li ><a href="javascript:void(0);" onclick="navigateToPage('project.html')" ><i class="fa-regular fa-file-code"></i> Project</a></li>
+                        <li ><a href="javascript:void(0);" onclick="navigateToPage('contact.html')" ><i class="fa-regular fa-address-book"></i> Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </nav>  
+        </header>
+        <div class="dropdown_menu">
+            <ul class="menu">
+                <li ><a href="javascript:void(0);" onclick="navigateToPage('index.html')" ><i class="fa-solid fa-house"></i> Home</a></li>
+                <li ><a href="javascript:void(0);" onclick="navigateToPage('about.html')" ><i class="fa-solid fa-person"></i> About</a></li>
+                <li ><a href="javascript:void(0);" onclick="navigateToPage('skills.html')" ><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li ><a href="javascript:void(0);" onclick="navigateToPage('project.html')" ><i class="fa-regular fa-file-code"></i> Project</a></li>
+                <li ><a href="javascript:void(0);" onclick="navigateToPage('contact.html')" ><i class="fa-regular fa-address-book"></i> Contact</a></li>
+
+            </ul>
+        </div>
+
+        <script>
+            
+        const togglebtn=document.querySelector('.toggle_btn')
+        const togglebtnicon=document.querySelector('.toggle_btn i')
+        const dropdown_menu=document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick=function(){
+        dropdown_menu.classList.toggle('open')
+        const isopen=dropdown_menu.classList.contains('open')
+
+        togglebtnicon.classList=isopen
+        ?"fa-solid fa-xmark"
+        :"fa-solid fa-bars"
+        } 
+        </script>
+    <div>
+        <h1 id="introAB"><u>Projects</u></h1>
+    </div>
+
+        
+
+    </body>
+</html>
