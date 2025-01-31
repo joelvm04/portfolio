@@ -299,7 +299,7 @@ body{
         align-items: center;
     }
     #nav_menu{
-        bottom: 620px;
+        top:20px;
     }
 
     .image{
